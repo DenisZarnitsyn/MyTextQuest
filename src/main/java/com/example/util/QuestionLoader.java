@@ -19,7 +19,8 @@ public class QuestionLoader {
 
         try (InputStream inputStream = QuestionLoader.class.getResourceAsStream("/questions.json")) {
             if (inputStream != null) {
-                questions = objectMapper.readValue(inputStream, new TypeReference<List<Question>>() {});
+                questions = objectMapper.readValue(inputStream, new TypeReference<List<Question>>() {
+                });
                 logger.info("Successfully loaded the questions.json file.");
             } else {
                 logger.error("Unable to find questions.json file.");

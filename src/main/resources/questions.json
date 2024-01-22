@@ -3,24 +3,42 @@
     "id": 1,
     "question": "You lose your memory. ACCEPT THE UFO CHALLENGE?",
     "options": [
-      {"text": "Accept the challenge", "nextQuestionId": 2},
-      {"text": "Reject the call", "nextQuestionId": -1}
+      {
+        "text": "Accept the challenge",
+        "nextQuestionId": 2
+      },
+      {
+        "text": "Reject the call",
+        "nextQuestionId": -1
+      }
     ]
   },
   {
     "id": 2,
     "question": "You accepted the challenge. Climb the captain's bridge?",
     "options": [
-      {"text": "Climb the bridge.", "nextQuestionId": 3},
-      {"text": "Refuse to climb the bridge.", "nextQuestionId": -1}
+      {
+        "text": "Climb the bridge.",
+        "nextQuestionId": 3
+      },
+      {
+        "text": "Refuse to climb the bridge.",
+        "nextQuestionId": -1
+      }
     ]
   },
   {
     "id": 3,
     "question": "You climbed the bridge. Who you are?",
     "options": [
-      {"text": "Tell the truth about yourself.", "nextQuestionId": 0},
-      {"text": "Lie about yourself.", "nextQuestionId": -1}
+      {
+        "text": "Tell the truth about yourself.",
+        "nextQuestionId": 0
+      },
+      {
+        "text": "Lie about yourself.",
+        "nextQuestionId": -1
+      }
     ]
   }
 ]
