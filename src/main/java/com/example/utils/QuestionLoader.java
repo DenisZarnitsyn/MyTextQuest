@@ -1,6 +1,6 @@
-package com.example.util;
+package com.example.utils;
 
-import com.example.model.Question;
+import com.example.models.Question;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;

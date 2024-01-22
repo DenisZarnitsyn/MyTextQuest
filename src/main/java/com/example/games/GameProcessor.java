@@ -1,8 +1,8 @@
-package com.example.game;
+package com.example.games;
 
-import com.example.model.Option;
-import com.example.model.Question;
-import com.example.util.QuestionLoader;
+import com.example.models.Option;
+import com.example.models.Question;
+import com.example.utils.QuestionLoader;
 import lombok.Getter;
 import lombok.Setter;
 import org.slf4j.Logger;

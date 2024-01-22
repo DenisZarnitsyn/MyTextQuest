@@ -1,6 +1,6 @@
-package com.example.servlet;
+package com.example.servlets;
 
-import com.example.game.GameProcessor;
+import com.example.games.GameProcessor;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

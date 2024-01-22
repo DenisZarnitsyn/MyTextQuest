@@ -1,8 +1,8 @@
-package com.example.servlet;
+package com.example.servlets;
 
-import com.example.game.GameProcessor;
-import com.example.model.Question;
-import com.example.util.QuestionLoader;
+import com.example.games.GameProcessor;
+import com.example.models.Question;
+import com.example.utils.QuestionLoader;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

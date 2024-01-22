@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>StartGameServlet</servlet-name>
-        <servlet-class>com.example.servlet.StartGameServlet</servlet-class>
+        <servlet-class>com.example.servlets.StartGameServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>StartGameServlet</servlet-name>
@@ -15,7 +15,7 @@
 
     <servlet>
         <servlet-name>GameServlet</servlet-name>
-        <servlet-class>com.example.servlet.GameServlet</servlet-class>
+        <servlet-class>com.example.servlets.GameServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>GameServlet</servlet-name>
@@ -24,7 +24,7 @@
 
     <servlet>
         <servlet-name>GameOverServlet</servlet-name>
-        <servlet-class>com.example.servlet.GameOverServlet</servlet-class>
+        <servlet-class>com.example.servlets.GameOverServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>GameOverServlet</servlet-name>
