@@ -1,5 +1,7 @@
 package com.example.servlet;
 
+import com.example.game.GameProcessor;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,6 +14,12 @@ import java.io.IOException;
 public class GameOverServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/game_over.jsp");
+
+        // Додаємо дані до атрибутів перед передачею
+        request.setAttribute("gameResult", ((GameProcessor) request.getSession().getAttribute("gameProcessor")).getGameResult());
+        request.setAttribute("winnerName", ((GameProcessor) request.getSession().getAttribute("gameProcessor")).getWinnerName());
+
         dispatcher.forward(request, response);
     }
 }
+

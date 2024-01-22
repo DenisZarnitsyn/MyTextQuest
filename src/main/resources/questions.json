@@ -19,8 +19,8 @@
     "id": 3,
     "question": "You climbed the bridge. Who you are?",
     "options": [
-      {"text": "Tell the truth about yourself.", "nextQuestionId": -1},
-      {"text": "Lie about yourself.", "nextQuestionId": 0}
+      {"text": "Tell the truth about yourself.", "nextQuestionId": 0},
+      {"text": "Lie about yourself.", "nextQuestionId": -1}
     ]
   }
 ]

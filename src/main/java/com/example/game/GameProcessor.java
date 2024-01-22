@@ -19,8 +19,10 @@ public class GameProcessor {
 
     private List<Question> questions;
     private int currentQuestionIndex;
-    @Setter private String playerName;
+    private String playerName;
     private HttpServletRequest request;
+    private String gameResult;
+    private String winnerName;
 
     public void setRequest(HttpServletRequest request) {
         this.request = request;
@@ -88,12 +90,14 @@ public class GameProcessor {
 
     private void handleGameOver() {
         endGame(false);
-        request.setAttribute("gameResult", "lost");
+        gameResult = "lost";
+        winnerName = playerName;
     }
 
     private void handleGameWin() {
         endGame(true);
-        request.setAttribute("gameResult", "won");
+        gameResult = "won";
+        winnerName = playerName;
     }
 
     private void endGame(boolean isGameWon) {

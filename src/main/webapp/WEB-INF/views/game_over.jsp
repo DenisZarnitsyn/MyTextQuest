@@ -22,15 +22,15 @@
 </head>
 <body>
     <div class="container">
-        <h1>Game Over!</h1>
-        <c:choose>
-            <c:when test="${gameResult eq 'won'}">
-                <p>Congratulations! You won the game.</p>
-            </c:when>
-            <c:when test="${gameResult eq 'lost'}">
-                <p>Game over. You lost.</p>
-            </c:when>
-        </c:choose>
+        <h1>Text game</h1>
+            <c:choose>
+                <c:when test="${gameResult eq 'won'}">
+                    <p>Congratulations, ${winnerName}. You won the game.</p>
+                </c:when>
+                <c:when test="${gameResult eq 'lost'}">
+                    <p>Sorry, ${winnerName}. You lost!</p>
+                </c:when>
+            </c:choose>
         <a href="${pageContext.request.contextPath}/start-game">Start again</a>
     </div>
 </body>
